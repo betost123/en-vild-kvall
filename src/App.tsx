@@ -2,16 +2,20 @@ import React from "react";
 import "./App.css";
 import Header from "./header";
 import Footer from "./Footer";
-import { Button, makeStyles } from "@material-ui/core";
+import { Button, makeStyles, Typography } from "@material-ui/core";
 
 const useStyles = makeStyles((theme) => ({
   container: {
     padding: "1rem",
   },
+  text: {
+    fontWeight: 600,
+    fontSize: 20,
+  },
 }));
 
 const truthData = [
-  "Har du skitit på mig",
+  "Har du skitit på dig",
   "Har du varit otrogen",
   "Har du kastat ett glas i golvet",
   "Har du knullat ditt ex bästa kompis",
@@ -37,6 +41,40 @@ const truthData = [
   "Har du någons rub one out hos en kompis?",
   "Tycker du Rolf är den finaste hunden i världen, om nej åker du ut ur spelet och får gå hem (och lämna både påse och alkohol här",
   "Om det brann, vem hade du räddat.. eller vad?",
+  "Har dina föräldrar jobbat svart?",
+  "Vad tjänar du i månadedn?",
+  "När blev du av med oskulden?",
+  "Tycker du att du är bättre än de flesta i rummet?",
+  "Tycker du att du är smartast i rummet?",
+  "Hur ofta onanerar du?",
+  "Vart onanerar du?",
+  "Dina top tre sökningar när du ska kolla porr?",
+  "Har du sett Ridskolan?",
+  "Har du legat med samma person som ditt syskon?",
+  "Har du legat med någon som är ful?",
+  "Hur mycket pengar har du på kontot?",
+  "Hur mycket spenderar du på droger varje månad?",
+  "Har du alkoholproblem?",
+  "Är du systembolagets bästa kund?",
+  "Vad saknar du i livet?",
+  "Vem har bäst och sämst musiksmak i rummet? Motivera förihelvete",
+  "Vems flickvän hade du helst bangat (som i ligga)",
+  "Vem har sämst kompisar?",
+  "Vem ber oftast om pengar?",
+  "Vem tar först slut på sina pengar?",
+  "Vem är en bra vän men på gränsen till needy?",
+  "Vem är latast och varför?",
+  "Vem är en mamas boy/girl? (inga hens tillåtna)",
+  "Vem har daddy issues?",
+  "Vem i rummet hade du bjudit in sist till festen",
+  "Vem behöver se en terapeut NU?",
+  "Vem är fulast i rummet?",
+  "Vem i rummet hade du helst bytt karriär med?",
+  "Om du var med i Saw, vem i rummet hade du dödat om du satt fast i en såg?",
+  "Du får välja alla utom två att ta med till en öde ö, vilka hade du lämnat?",
+  "Vem är troligast att hamna i fängelse?",
+  "Vem vill du inte presentera för dina föräldrar?",
+  "Vem kommer dö när de är 40 av en överdos?",
 ];
 
 const dareData = [
@@ -53,8 +91,8 @@ const dareData = [
   "Diska, du får även drick upp alla glas innan disken sker",
   "Ta Rolf på en promenad",
   "Hånga upp valfri tjej, eller den som räcker upp handen först",
-  "Själ ett glas",
-  "Själ en liten stickling",
+  "Stjäl ett glas",
+  "Stjäl en liten stickling",
   "Låt alla andra välja ett nummer du ska swisha och skriv i hälsning Tack för senast babe, jag älskar dig mer än min fru!",
   "Låt de andra spelarna lägga upp en Story",
   "Ät en vitlöksklyfta, ew äckligt du kommer lukra ur munnen",
@@ -67,6 +105,9 @@ const dareData = [
   "Ge bort något du äger till person till höger",
   "Mejla din arbetsgivare att du kommer vara för bakis för att jobba nästa pass",
   "Ring din pinsammaste kompis/ eller den stördaste som du vet kommer att komma om du frågar",
+  "Ranka alla i rummet från snyggast till fulast",
+  "Vems mamma knullar du helst?",
+  "Adoptera en hund till Lois",
 ];
 
 function App() {
@@ -87,13 +128,15 @@ function App() {
     <div className="App">
       <Header />
       <div className={classes.container}>
-        {truthData[truthIndex]}
+        <Typography className={classes.text}>
+          {truthData[truthIndex]}
+        </Typography>
         <br />
         <br />
         eller:
         <br />
         <br />
-        {dareData[dareIndex]}
+        <Typography className={classes.text}>{dareData[dareIndex]}</Typography>
         <br />
         <br />
         <Button onClick={onClickNext} variant="outlined">
