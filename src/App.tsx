@@ -75,6 +75,7 @@ const truthData = [
   "Vem är troligast att hamna i fängelse?",
   "Vem vill du inte presentera för dina föräldrar?",
   "Vem kommer dö när de är 40 av en överdos?",
+  "Berätta om ditt bästa ligg",
 ];
 
 const dareData = [
@@ -108,6 +109,7 @@ const dareData = [
   "Ranka alla i rummet från snyggast till fulast",
   "Vems mamma knullar du helst?",
   "Adoptera en hund till Lois",
+  "Sug Lukas kuk",
 ];
 
 function App() {
@@ -125,7 +127,7 @@ function App() {
   };
 
   return (
-    <div className="App">
+    <div className='App'>
       <Header />
       <div className={classes.container}>
         <Typography className={classes.text}>
@@ -139,7 +141,7 @@ function App() {
         <Typography className={classes.text}>{dareData[dareIndex]}</Typography>
         <br />
         <br />
-        <Button onClick={onClickNext} variant="outlined">
+        <Button onClick={onClickNext} variant='outlined'>
           Nästa
         </Button>
       </div>
