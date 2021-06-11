@@ -76,6 +76,18 @@ const truthData = [
   "Vem vill du inte presentera för dina föräldrar?",
   "Vem kommer dö när de är 40 av en överdos?",
   "Berätta om ditt bästa ligg",
+  "Vilken egenskap önskar du att du l'rt dig som barn?",
+  "Näm en crush du han, en internationell och en svensk",
+  "Vad önskar du att fdu va bra på?",
+  "Hade du hellre slutat dricka eller slutat ta droger?",
+  "Det sprids et virys och för att rädda alla hadce du behövt offra en person. Vem hade du offrat? Hade du offrat en eller valt att no alla dog?",
+  "Om du fått träffa en person som är död nu, vem hade du valt?",
+  "Du får spendera dagen med vem du vill, vem hade du valt levadne/död? (du har en miljon kronor)",
+  "Vilket lån hade du först betalat in på om du vann 10 000kr",
+  "vems partner hade du valt",
+  "Du får en triss av din kompis i födelsedagspresent. Du vinner 50 000kr. Hade du delat med kompisen som gav dig lotten?",
+  "Hur gammal va du när du förlora oskulden?",
+  "Hur gammal va första fyllan",
 ];
 
 const dareData = [
