@@ -122,6 +122,11 @@ const dareData = [
   "Vems mamma knullar du helst?",
   "Adoptera en hund till Lois",
   "Sug Lukas kuk",
+  "spring till grannen och fråga om de vill festa med oss",
+  "twerka på senasten personnen som kom in i rummet",
+  "låtsas att du är bartender och ta beställningar, om du får dricks är du värd ett extra lina",
+  "vissla resten av låten som spelas tills den tar slut, om du misslyckas får du halsa ditt glas, good luck sucker!",
+  "Ge en kärleksförklaring till den som sitter till höger om dig, om du ej kan hålla minen så fåt personen i fråga hälla upp valfri shot till dig",
 ];
 
 function App() {
